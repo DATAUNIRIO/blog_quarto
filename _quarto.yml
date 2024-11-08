@@ -1,0 +1,39 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Steven Ross"
+  favicon: img/steven.jpg # NOTE: that the `favicon` is a `website` level option (not under `navbar`)
+  navbar:
+    title: false # override printing your website `title` (e.g. "Sam Csik" on line 6) in the top left corner of your navbar
+    logo: img/steven.jpg
+    logo-alt: "Alt text for logo"
+    right: # accepts right/left/center; you can also place items individually on the left, right, and center
+      - href: index.qmd
+        text: Home
+      - href: blog.qmd
+        text: Blog
+      - href: aulas.qmd
+        text: Aulas
+      - href: resources.qmd
+        text: Resources
+      - href: file/path/to/myCV.pdf # providing a relative file path to a pdf will open up a browser-based pdf viewer when clicked
+        text: CV
+        target: _blank # opens link (or page) in a new browser tab
+      - icon: github # add icons as navbar buttons
+        href: https://github.com/DATAUNIRIO
+        target: _blank
+page-footer:
+    background: light # or `dark`
+    left: Copyright 2024, Steven Dutt-Ross
+    right: Este site foi criado com o R
+    #right: Este site foi criado com {{< fa heart title="a heart" >}}, [{{< fa brands github title="GitHub octocat logo" >}}](https://dataunirio.github.io/){target=_blank}, [{{< fa brands r-project title="R Project" >}}](https://www.r-project.org/about.html){target=_blank} and [Quarto](https://quarto.org/){target=_blank}
+format:
+  html:
+    theme: 
+      - cosmo
+      - styles.scss
+    mainfont: Archivo+Narrow
+    toc: true
+    page-layout: full

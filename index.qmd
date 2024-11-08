@@ -1,0 +1,114 @@
+---
+title: "R & Py" # optional (omitted in example screenshots); 
+image: img/steven.jpg
+toc: false # disable table of contents for this page 
+about: 
+  template: jolla 
+  image-shape: round
+  image-width: 17em
+  links: # create buttons
+    - text: Matemática
+      href: https://matematica.uniriotec.br/
+      target: _blank # opens link in a new browser tab
+    - text: GitHub
+      href: https://github.com/DATAUNIRIO
+      target: _blank 
+    - text: DMQ
+      href: https://matematica.uniriotec.br/departamento-de-metodos-quantitativos/
+---
+        
+# ~ landing page content / text omitted for brevity ~ 
+
+> *"Thou shalt not answer questionnaires*\
+> *Or quizzes upon World Affairs,*\
+> *Nor with compliance*\
+> *Take any test. Thou shalt not sit*\
+> *With statisticians nor commit*\
+> *A social science"*\
+> -- W.H. Auden[^why-do-we-learn-statistics-1]
+
+[^why-do-we-learn-statistics-1]: A citação vem do poema de Auden de 1946, Under Which Lyre: A Reactionary Tract for the Times, proferido como parte de um discurso de formatura na Universidade de Harvard. A história do poema é bastante interessante: <https://www.harvardmagazine.com/2007/11/a-poets-warning.html>
+
+
+```{r, echo=FALSE,eval=FALSE}
+# https://ucsb-meds.github.io/customizing-quarto-websites/#/title-slide
+```
+
+### This content appears above the formatted about page content.
+
+:::{#hero-heading}
+
+Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.
+
+## Education
+
+University of California, San Diego | San Diego, CA
+PhD in Mathematics | Sept 2011 - June 2015
+
+Macalester College | St. Paul MA
+B.A in Economics | Sept 2007 - June 2011
+
+## Experience
+
+Wengo Analytics | Head Data Scientist | April 2018 - present
+
+GeoScynce | Chief Analyst | Sept 2012 - April 2018
+
+:::
+
+
+::: {.callout-note collapse="true" icon=false}
+Note that there are five types of callouts, including:
+`note`, `warning`, `important`, `tip`, and `caution`.
+:::
+
+::: {.callout-tip collapse="true" icon=false}
+## Tip with Title
+
+This is an example of a callout with a title.
+:::
+
+::: {.callout-caution collapse="true" icon=false}
+## Expand To Learn About Collapse
+
+This is an example of a 'folded' caution callout that can be expanded by the user. You can use `collapse="true"` to collapse it by default or `collapse="false"` to make a collapsible callout that is expanded by default.
+:::
+
+::: {.column-margin}
+![A margin image](img/steven.jpg)
+:::
+
+.column-margin
+
+This also works for text content:
+
+::: {.column-margin}
+We know from *the first fundamental theorem of calculus* that for $x$ in $[a, b]$:
+
+$$\frac{d}{dx}\left( \int_{a}^{x} f(u)\,du\right)=f(x).$$
+:::
+
+```{r}
+#| column: margin
+
+knitr::kable(
+  mtcars[1:6, 1:3]
+)
+```
+
+### This content appears below the formatted about page content.
+
+## Textos/Posts
+
+[Veja todos os textos aqui! / See all posts here!](posts/index.qmd)
+
+::: {#posts}
+:::
+
+## Apresentações/Presentations
+
+[Veja todas as apresentações aqui! / See all talks here!](content.qmd)
+
+::: {#talks}
+:::
+
